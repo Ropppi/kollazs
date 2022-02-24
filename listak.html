@@ -1,100 +1,100 @@
-<! DOCTYPE html>
+<!DOCTYPE html>
 <html lang="hu">
-<fej>
+<head>
 
     <meta karakterkészlet="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <cím>Listák</title>
-</fej>
-<karosszériastílus="háttérszín:búza ;">
-    <stílus>
-        test {
-          margó: 0;
-          betűtípus-család: "Lato", sans-serif;
-        }
-        
- . tálaló {
-          margó: 0;
-          párnázás: 0;
-          szélesség: 200px;
-          háttérszín: #f1f1f1;
-          pozíció: rögzített;
-          magasság: 100%;
-          túlcsordulás: automatikus;
-        }
-        
- . oldalsáv a {
-          kijelző: blokk;
-          szín: fekete;
-          párnázás: 16px;
-          szövegdekoráció: nincs;
-        }
-         
- . oldalsáv a. aktív {
-          háttérszín: #04AA6D;
-          szín: fehér;
-        }
-        
- . oldalsáv a:hover:not(. aktív) {
-          háttérszín: #555;
-          szín: fehér;
-        }
-        
-        div. tartalom {
-          margó bal: 200px;
-          párnázás: 1px 16px;
-          magasság: 1000px;
-        }
-        
-        @media képernyő és (max szélesség: 700px) {
- . tálaló {
-            szélesség: 100%;
-            magasság: automatikus;
-            pozíció: relatív;
-          }
- . oldalsáv a {float: balra;}
-          div. tartalom {margó-balra: 0;}
-        }
-        
-        @media képernyő és (max-szélesség: 400px) {
- . oldalsáv a {
-            szöveg igazítása: középre;
-            úszó: nincs;
-          }
-        }
-        </stílus>
-        </fej>
-        <test>
-        
-        <div osztály="oldalsáv">
-          <a  href="index.html">Főoldal</a>
+    <title>Listák</title>
+    <link rel="stylesheet" href="style3.css">
+<body style="background-color: wheat;">
+</body>
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+    </style>
+</head>
+<body>
+        <div class="sidebar">
+          <a href="index.html">Főoldal</a>
           <a href="keplink.html">1. feladat</a>
           <a class="active" href="listak.html">2. feladat</a>
-          <a href="tablazat.html">3. feladat </a>
+          <a href="orarend.html">3. feladat </a>
           <a href="urlap.html">Űrlap</a>
         </div>
         
-        <div osztály="tartalom">
+        <div class="content">
     
-    
-    <h1 stílus="szín:kékibolya;" > Robi László</h1>
-    <h2 stílus="szín:zöld;" > Listák</h2>
+    <div>
+  <h1 style="color: rgb(5, 39, 39);"> Robi László</h1>
+  <h2 style="color: green;"> Listák</h2>
+  <p style="background-color:palevioletred; width: 300px;"> A kedvenc tantárgyaim:</p>
+  <ol stílus="szín:rgb(99, 26, 71);">
+      <li>informatika és távközlés</li>
+      <li>Töri</li>
+      <li>TESI</li>
+  </ol>
 
-    <p style="background-color:palevioletred; width: 300px;" > A kedvenc tantárgyaim:</p>
-    <ol stílus="szín:rgb(99, 26, 71);">
-        <li>informatika és távközlés</li>
-        <li>Töri</li>
-        <li>TESI</li>
-    </ol>
-
-    <p style="background-color:slateblue; width: 300px;" > A kedvenc szabadidős tevékenységeim:</p>
-    <ul style="color:royalblue;">
-        <li type="circle">Számítógépezés</li>
-        <li type="disc">R6-ozás</li>
-        <li típus="négyzet">Kirándulás</li>
-    </ul>
-    <lábléc>
+  <p style="background-color:slateblue; width: 300px;" > A kedvenc szabadidős tevékenységeim:</p>
+  <ul style="color:royalblue;">
+      <li type="circle">Számítógépezés</li>
+      <li type="disc">R6-ozás</li>
+      <li típus="négyzet">Kirándulás</li>
+  </ul>
+</div>
+    <footer>
       <a href="mailto:ropppii44@gmail.com">ropppi</a>
-      </lábléc>
+    </footer>
 </test>
 </html>
