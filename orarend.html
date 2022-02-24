@@ -1,21 +1,86 @@
 <!DOCTYPE html>
 <html lang="hu">
-<fej>
+<head>
     <meta karakterkészlet="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <cím>Órarend</cím>
-</fej>
-<test>
+    <title>Órarend</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+<body>
+  <div class="sidebar">
+    <a href="index.html">Főoldal</a>
+    <a href="keplink.html">1. feladat</a>
+    <a href="listak.html">2. feladat</a>
+    <a class="active" href="tablazat.html">3. feladat </a>
+    <a href="urlap.html">Űrlap</a>
+  </div>
+  <div class="content" >
+  <style>
+    body {
+      margin: 0;
+      font-family: "Lato", sans-serif;
+    }
+    
+    .sidebar {
+      margin: 0;
+      padding: 0;
+      width: 200px;
+      background-color: #f1f1f1;
+      position: fixed;
+      height: 100%;
+      overflow: auto;
+    }
+    
+    .sidebar a {
+      display: block;
+      color: black;
+      padding: 16px;
+      text-decoration: none;
+    }
+     
+    .sidebar a.active {
+      background-color: #04AA6D;
+      color: white;
+    }
+    
+    .sidebar a:hover:not(.active) {
+      background-color: #555;
+      color: white;
+    }
+    
+    div.content {
+      margin-left: 200px;
+      padding: 1px 16px;
+      height: 1000px;
+    }
+    
+    @media screen and (max-width: 700px) {
+      .sidebar {
+        width: 100%;
+        height: auto;
+        position: relative;
+      }
+      .sidebar a {float: left;}
+      div.content {margin-left: 0;}
+    }
+    
+    @media screen and (max-width: 400px) {
+      .sidebar a {
+        text-align: center;
+        float: none;
+      }
+    }
+    </style>
     <nav>
-        <a href="kollazs/">HOME</a>|
+        <a href="kollazs">HOME</a>|
         <a href="keplink.html">1.feladat</a>|
         <a href="listak.html">2.feladat</a>|
         <a href="orarend.html" stílus="háttérszín: diagramreuse;" > 3.feladat</a>|
         <a href="urlap.html">Űrlap</a>
     </nav>
-    <tábla szegélye = "2px" >
+    <table border = "2px" >
         <tr style="background-color: chartreuse;">
-            <td stílus="szín: piros;" > Óraszám</td>
+            <td style="border: red;"> Óraszám</td>
             <td>Idő</td>
             <td>Hétfő</td>
             <td>Kedd</td>
@@ -104,10 +169,10 @@
             <td>Informatika és távk</td>
             <td></td>
         </tr>
-    </asztal>
+    </table>
     <p>Elérhetőségem:</p>
 <lábléc>
 <a href="mailto:ropppii44@gmail.com">ropppi</a>
 </lábléc>
-</test>
+</body>
 </html>
