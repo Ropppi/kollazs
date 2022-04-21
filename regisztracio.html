@@ -9,6 +9,72 @@
     <title>Regisztráció</title>
 </head>
 <body>
+    <style>
+        body {
+             margin: 0;
+             font-family: "Lato", sans-serif;
+           }
+           
+           .sidebar {
+             margin: 0;
+             padding: 0;
+             width: 200px;
+             background-color: #f1f1f1;
+             position: fixed;
+             height: 100%;
+             overflow: auto;
+           }
+           
+           .sidebar a {
+             display: block;
+             color: black;
+             padding: 16px;
+             text-decoration: none;
+           }
+            
+           .sidebar a.active {
+             background-color: #04AA6D;
+             color: white;
+           }
+           
+           .sidebar a:hover:not(.active) {
+             background-color: #555;
+             color: white;
+           }
+           
+           div.content {
+             margin-left: 200px;
+             padding: 1px 16px;
+             height: 1000px;
+           }
+           
+           @media screen and (max-width: 700px) {
+             .sidebar {
+               width: 100%;
+               height: auto;
+               position: relative;
+             }
+             .sidebar a {float: left;}
+             div.content {margin-left: 0;}
+           }
+           
+           @media screen and (max-width: 400px) {
+             .sidebar a {
+               text-align: center;
+               float: none;
+             }
+           }
+           </style>
+<nav class="sidebar">
+    <a href="kollazs">HOME</a>|
+    <a href="keplink.html">1.feladat</a>|
+    <a href="listak.html">2.feladat</a>|
+    <a href="orarend.html"> 3.feladat</a>|
+    <a href="urlap.html">Űrlap</a>
+    <a href="pitagorasz.html">5.feladat</a>
+    <a class="active" href="regisztracio.html">6.feladat</a>
+</nav>
+
     <script>
         function belep(username, password) {
             if (username !== "Ropi") {
@@ -34,5 +100,8 @@
     <button onclick="document.getElementById('field').style.backgroundColor = 'green'">Zöld</button>
     <button onclick="document.getElementById('field').style.backgroundColor = 'blue'">Kék</button>
     <button onclick="document.getElementById('field').style.backgroundColor = 'red'">piros</button>
+    <footer>
+        <a href="mailto:ropppii44@gmail.com">ropppi</a>
+        </footer>
 </body>
 </html>
