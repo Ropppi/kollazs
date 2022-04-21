@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="hu">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Regisztráció</title>
+</head>
+<body>
+    <script>
+        function belep(username, password) {
+            if (username !== "Ropi") {
+                alert("Lehet, hogy helytelenül adtad meg a felhasználónevedet vagy a jelszavadat.")
+            } else {
+                if (password != "123") {
+                    alert("Lehet, hogy helytelenül adtad meg a felhasználónevedet vagy a jelszavadat.")
+                } else {
+                    alert("Üdvözöljük: " + username + "")
+                    window.open('https://www.riotgames.com/en','_self')
+                }
+            }
+        }
+    </script>
+    <fieldset id="field" style="width: fit-content; background-color: gray;">
+        <legend style="background-color: darkgray; border: 1px solid;">Regisztráció</legend>
+        <input type="text" placeholder="Név" id="nev">
+        <br>
+        <input type="password" placeholder="Jelszó" required id="jelszo">
+        <br>
+        <button onclick="belep(nev.value,jelszo.value)">OK</button>
+    </fieldset>
+    <button onclick="document.getElementById('field').style.backgroundColor = 'green'">Zöld</button>
+    <button onclick="document.getElementById('field').style.backgroundColor = 'blue'">Kék</button>
+    <button onclick="document.getElementById('field').style.backgroundColor = 'red'">piros</button>
+</body>
+</html>
