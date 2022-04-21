@@ -5,12 +5,14 @@
     <h1>pitagorasz</h1>
 </head>
 <body>
-    <style>
+    <style >
  body {
       margin: 0;
       font-family: "Lato", sans-serif;
     }
-    
+    .flo{
+        float: right;
+    }
     .sidebar {
       margin: 0;
       padding: 0;
@@ -73,12 +75,14 @@
 
 
     </style>
+    <div class="flo">
     <input id="a_oldal" type="number" placeholder="a_oldal" required>
     <br>
     <input id="b_oldal" type="number" placeholder="b_oldal" required>
     <br>
     <input id="eredmeny" placeholder="eredmény" type="text">
     <button onclick="szamol()">kiszámít</button>
+</div>
     <script>
         function szamol(){
            eredmeny.value = Math.sqrt(a_oldal.value + a_oldal.value + b_oldal.value * b_oldal.value)
