@@ -5,102 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
     <title>Regisztráció</title>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css">
     <style>
-        body {
-             margin: 0;
-             font-family: "Lato", sans-serif;
-           }
-           
-           .sidebar {
-             margin: 0;
-             padding: 0;
-             width: 200px;
-             background-color: #f1f1f1;
-             position: fixed;
-             height: 100%;
-             overflow: auto;
-           }
-           
-           .sidebar a {
-             display: block;
-             color: black;
-             padding: 16px;
-             text-decoration: none;
-           }
-            
-           .sidebar a.active {
-             background-color: #04AA6D;
-             color: white;
-           }
-           
-           .sidebar a:hover:not(.active) {
-             background-color: #555;
-             color: white;
-           }
-           
-           div.content {
-             margin-left: 200px;
-             padding: 1px 16px;
-             height: 1000px;
-           }
-           
-           @media screen and (max-width: 700px) {
-             .sidebar {
-               width: 100%;
-               height: auto;
-               position: relative;
-             }
-             .sidebar a {float: left;}
-             div.content {margin-left: 0;}
-           }
-           
-           @media screen and (max-width: 400px) {
-             .sidebar a {
-               text-align: center;
-               float: none;
-             }
-           }
-           </style>
-<nav class="sidebar">
-    <a href="index.html">Főoldal</a>|
+      body {
+        margin: 0;
+        font-family: "Lato", sans-serif;
+      }
+      
+      .sidebar {
+        margin: 0;
+        padding: 0;
+        width: 200px;
+        background-color: #f1f1f1;
+        position: fixed;
+        height: 100%;
+        overflow: auto;
+      }
+      
+      .sidebar a {
+        display: block;
+        color: black;
+        padding: 16px;
+        text-decoration: none;
+      }
+       
+      .sidebar a.active {
+        background-color: #04AA6D;
+        color: white;
+      }
+      
+      .sidebar a:hover:not(.active) {
+        background-color: #555;
+        color: white;
+      }
+      
+      div.content {
+        margin-left: 200px;
+        padding: 1px 16px;
+        height: 1000px;
+      }
+      
+      @media screen and (max-width: 700px) {
+        .sidebar {
+          width: 100%;
+          height: auto;
+          position: relative;
+        }
+        .sidebar a {float: left;}
+        div.content {margin-left: 0;}
+      }
+      
+      @media screen and (max-width: 400px) {
+        .sidebar a {
+          text-align: center;
+          float: none;
+        }
+      }
+        </style>
+</head>
+
+<body>
+  <nav class="sidebar">
+    <a href="kollazs">Főoldal</a>|
     <a href="keplink.html">1.feladat</a>|
     <a href="listak.html">2.feladat</a>|
     <a href="orarend.html"> 3.feladat</a>|
     <a href="urlap.html">Űrlap</a>
     <a href="kosar.html">Kosár</a>
     <a href="pitagorasz.html">5.feladat</a>
-    <a class="active" href="regisztracio.html">6.feladat</a>
+    <a class="active"href="regisztracio.html">6.feladat</a>
 </nav>
 
-    <script>
-        function belep(username, password) {
-            if (username !== "Ropi") {
-                alert("Lehet, hogy helytelenül adtad meg a felhasználónevedet vagy a jelszavadat.")
-            } else {
-                if (password != "123") {
-                    alert("Lehet, hogy helytelenül adtad meg a felhasználónevedet vagy a jelszavadat.")
-                } else {
-                    alert("Üdvözöljük: " + username + "")
-                    window.open('https://www.riotgames.com/en','_self')
-                }
-            }
-        }
-    </script>
-    <fieldset id="field" style="width: fit-content; background-color: gray;">
-        <legend style="background-color: darkgray; border: 1px solid;">Regisztráció</legend>
-        <input type="text" placeholder="Név" id="nev">
-        <br>
-        <input type="password" placeholder="Jelszó" required id="jelszo">
-        <br>
-        <button onclick="belep(nev.value,jelszo.value)">OK</button>
-    </fieldset>
-    <button onclick="document.getElementById('field').style.backgroundColor = 'green'">Zöld</button>
-    <button onclick="document.getElementById('field').style.backgroundColor = 'blue'">Kék</button>
-    <button onclick="document.getElementById('field').style.backgroundColor = 'red'">piros</button>
+    <h1>Regisztráció</h1>
+
+    <form action="">
+        <input class="szele" style="margin-top: 20px;" type="text" id="" placeholder="neved"><br>
+        <input class="szele" type="email" id="" placeholder="email címed"><br>
+        <input class="szele" type="password" name="" id="" placeholder="jelszó"><br>
+        <input class="szele" type="password" name="" id="" placeholder="jelszó megerősétés"><br>
+
+        <label for="aszf">Elfogadom az ÁSZF</label>        
+        <input type="checkbox" name="aszf" id="" checked><br>
+
+        <input type="submit" value="Regisztráció" onclick="reg()"> <br>
+    </form>
+
     <footer>
         <a href="mailto:ropppii44@gmail.com">ropppi</a>
         </footer>
