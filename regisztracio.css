@@ -2,6 +2,9 @@ body{
 
     background-image: url(https://tabakevich.com/media/catalog/product/cache/7/image/9df78eab33525d08d6e5fb8d27136e95/e/l/elf_bar_lux_1500_red_bull_strawberry.jpg);
     text-align: center;
- background-repeat: no-repeat;
+    background-repeat: no-repeat;
 
+}
+table{
+    text-align: center;
 }
